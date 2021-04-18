@@ -8,7 +8,33 @@
         Title="KEEPING RECORDS OF EVENTS MAP" 
         Height="768" Width="1024"
         MaxHeight="768" MaxWidth="1024" >
-    <Grid>
-        
-    </Grid>
+    <DockPanel>
+        <Menu DockPanel.Dock ="Top">
+            <Menu.ItemsPanel>
+                <!--Podkontrola koja određuje kako se item-i prikazuju.-->
+                <ItemsPanelTemplate>
+                    <!-- Specificiramo ne šta je u kontroli nego template koji je formira-->
+                    <DockPanel HorizontalAlignment="Stretch"></DockPanel>
+                    <!-- Prikazujemo preko Dock Panela koji preuzme sav prostor -->
+                </ItemsPanelTemplate>
+            </Menu.ItemsPanel>
+            <MenuItem Header="_Event" MinWidth="80" MinHeight="50" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <MenuItem Header="_New"></MenuItem>
+                <MenuItem Header="_All"></MenuItem>
+            </MenuItem>
+            <Separator/>
+            <MenuItem Header="T_ype" MinWidth="80" MinHeight="50">
+                <MenuItem Header="_New"></MenuItem>
+                <MenuItem Header="_All" ></MenuItem>
+            </MenuItem>
+            <Separator/>
+            <MenuItem Header="_Tag" MinWidth="80" MinHeight="50">
+                <MenuItem Header="_New"></MenuItem>
+                <MenuItem Header="_All" ></MenuItem>
+            </MenuItem>
+        </Menu>
+        <Grid DockPanel.Dock="Bottom" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+
+        </Grid>
+    </DockPanel>
 </Window>
