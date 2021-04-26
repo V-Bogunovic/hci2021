@@ -55,6 +55,36 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Dialogs\EventDialog.xaml.cs">
+      <DependentUpon>EventDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\TagDialog.xaml.cs">
+      <DependentUpon>TagDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\TypeDialog.xaml.cs">
+      <DependentUpon>TypeDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tables\EventTable.xaml.cs">
+      <DependentUpon>EventTable.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tables\TagTable.xaml.cs">
+      <DependentUpon>TagTable.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tables\TypeTable.xaml.cs">
+      <DependentUpon>TypeTable.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Dialogs\EventDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dialogs\TagDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dialogs\TypeDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -67,6 +97,18 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Tables\EventTable.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tables\TagTable.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tables\TypeTable.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

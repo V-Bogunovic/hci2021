@@ -9,32 +9,29 @@
         Height="768" Width="1024"
         MaxHeight="768" MaxWidth="1024" >
     <DockPanel>
-        <Menu DockPanel.Dock ="Top">
-            <Menu.ItemsPanel>
-                <!--Podkontrola koja određuje kako se item-i prikazuju.-->
-                <ItemsPanelTemplate>
-                    <!-- Specificiramo ne šta je u kontroli nego template koji je formira-->
-                    <DockPanel HorizontalAlignment="Stretch"></DockPanel>
-                    <!-- Prikazujemo preko Dock Panela koji preuzme sav prostor -->
-                </ItemsPanelTemplate>
-            </Menu.ItemsPanel>
-            <MenuItem Header="_Event" MinWidth="80" MinHeight="50" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <MenuItem Header="_New"></MenuItem>
-                <MenuItem Header="_All"></MenuItem>
-            </MenuItem>
-            <Separator/>
-            <MenuItem Header="T_ype" MinWidth="80" MinHeight="50">
-                <MenuItem Header="_New"></MenuItem>
-                <MenuItem Header="_All" ></MenuItem>
-            </MenuItem>
-            <Separator/>
-            <MenuItem Header="_Tag" MinWidth="80" MinHeight="50">
-                <MenuItem Header="_New"></MenuItem>
-                <MenuItem Header="_All" ></MenuItem>
-            </MenuItem>
-        </Menu>
-        <Grid DockPanel.Dock="Bottom" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
-
-        </Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Menu Grid.Row="0" Grid.ColumnSpan="2" Name="Menu" DockPanel.Dock="Top">
+                <MenuItem Header="_Event" MinWidth="80" MinHeight="50" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <MenuItem Header="_New" Click="ShowEventDialog"></MenuItem>
+                    <MenuItem Header="_All" Click="ShowEventTable"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="T_ype" MinWidth="80" MinHeight="50">
+                    <MenuItem Header="_New" Click="ShowTypeDialog"></MenuItem>
+                    <MenuItem Header="_All" Click="ShowTypeTable"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="_Tag" MinWidth="80" MinHeight="50">
+                    <MenuItem Header="_New" Click="ShowTagDialog"></MenuItem>
+                    <MenuItem Header="_All" Click="ShowTagTable"></MenuItem>
+                </MenuItem>
+            </Menu>
+        </Grid>        
     </DockPanel>
 </Window>

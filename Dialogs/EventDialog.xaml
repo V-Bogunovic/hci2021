@@ -1,0 +1,67 @@
+﻿<Window x:Class="hci2021.Dialogs.EventDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hci2021.Dialogs"
+        mc:Ignorable="d"
+        Title="Add new event" Height="768" Width="1024"
+        MaxHeight="768" MaxWidth="1024">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="0" Grid.Row="0" VerticalAlignment="Center">Icon:</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="1" VerticalAlignment="Center">Label:</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="2" VerticalAlignment="Center">Name:</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="3" VerticalAlignment="Center">Description:</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="4" VerticalAlignment="Center">Type:</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="5" VerticalAlignment="Center">Attendance:</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="6" VerticalAlignment="Center">Humanitarian:</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="7" VerticalAlignment="Center">Price:</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="8" VerticalAlignment="Center">Country:</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="9" VerticalAlignment="Center">City:</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="10" VerticalAlignment="Center">Dates:</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="11" VerticalAlignment="Center">Tags:</TextBlock>
+
+        <TextBox Grid.Column="1"  Grid.Row="0" ></TextBox>
+        <TextBox Grid.Column="1"  Grid.Row="1" ></TextBox>
+        <TextBox Grid.Column="1"  Grid.Row="2" ></TextBox>
+        <TextBox Grid.Column="1"  Grid.Row="3" ></TextBox>
+        <ComboBox Grid.Column="1"  Grid.Row="4" ></ComboBox>
+        <ComboBox Grid.Column="1"  Grid.Row="5" >
+            <ComboBoxItem>Up to 1000</ComboBoxItem>
+            <ComboBoxItem>1000 - 5000</ComboBoxItem>
+            <ComboBoxItem>5000 - 10000</ComboBoxItem>
+            <ComboBoxItem>Over 10000</ComboBoxItem>
+        </ComboBox>
+        <CheckBox Grid.Column="1"  Grid.Row="6"></CheckBox>
+        <TextBox Grid.Column="1"  Grid.Row="7"></TextBox>
+        <TextBox Grid.Column="1"  Grid.Row="8"></TextBox>
+        <TextBox Grid.Column="1"  Grid.Row="9"></TextBox>
+        <DatePicker Grid.Column="1"  Grid.Row="10"></DatePicker>
+
+        <Button Grid.Column="1"  Grid.Row="12" Content="Save"></Button>
+
+        <Button Grid.Column="2"  Grid.Row="4" Content="Add New"></Button>
+        <TextBlock Grid.Column="2"  Grid.Row="7">$</TextBlock>
+    </Grid>
+</Window>
