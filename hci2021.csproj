@@ -64,6 +64,10 @@
     <Compile Include="Dialogs\TypeDialog.xaml.cs">
       <DependentUpon>TypeDialog.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Event.cs" />
+    <Compile Include="Models\Tag.cs" />
+    <Compile Include="Models\Type.cs" />
+    <Compile Include="Repository.cs" />
     <Compile Include="Tables\EventTable.xaml.cs">
       <DependentUpon>EventTable.xaml</DependentUpon>
     </Compile>
@@ -135,6 +139,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Database\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
